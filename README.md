@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# TaskMaster – React Task Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic simple task management UI built using React. The app lets users create, view, complete, and delete tasks. It includes a collapsible sidebar, dark mode toggle, and saves tasks in local storage so they stay after refresh.
 
-## Available Scripts
+## Architechture
 
-In the project directory, you can run:
+The project is built using React and is organized into components and context files:
 
-### `npm start`
+- **Sidebar and Header** are separate components and show navigation links and user info.
+- **TaskForm** is used for adding new tasks.
+- **TaskList** shows all the current tasks.
+- **TaskCard** is the card that shows each task's info like title, due date, priority, and status.
+  **Priority indicator** (e.g., a colored circle: Red for High, Yellow for Medium, Green for Low).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app uses React Context for task state and theme (dark/light) handling. CSS Modules are used for styling so styles are scoped to each component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Key Development Decisions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Used `Context API` instead of prop drilling for task and theme state.
+- Implemented localStorage to keep tasks after refreshing the browser.
+- Designed layout to be responsive for mobile, tablet, and desktop.
+- Dark mode toggle is included and updates the UI instantly.
+- Task form is always visible on Dashboard and Tasks pages for easy use.
 
-### `npm run build`
+There is potential to expand and improve this project further by adding more advanced features with additional time and planning.
+This version focuses on meeting the assignment’s core UI and interaction requirements in a clean, responsive layout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Run the App Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository
