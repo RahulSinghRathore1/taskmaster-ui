@@ -1,0 +1,31 @@
+/* styles/Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+.themeToggle {
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  background-color: #6c63ff;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50%;
+  font-weight: bold;
+}

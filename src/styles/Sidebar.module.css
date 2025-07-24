@@ -1,0 +1,68 @@
+/* styles/Sidebar.module.css */
+.sidebar {
+  width: 240px;
+  background: rgba(255, 255, 255, 0.95);
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+
+.collapsed {
+  width: 80px;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.navLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: #6c63ff;
+}
+
+.active {
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+.bottomSection {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #222;
+}

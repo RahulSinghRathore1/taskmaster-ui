@@ -1,0 +1,37 @@
+/* styles/App.module.css */
+.appContainer {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 240px;
+  transition: margin-left 0.3s ease;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.taskPage,
+.settingsPage {
+  margin-top: 2rem;
+}
+
+.pageTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.collapsedSidebar + .mainContent {
+  margin-left: 80px;
+}

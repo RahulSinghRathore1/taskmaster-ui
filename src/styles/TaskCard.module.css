@@ -1,0 +1,90 @@
+.card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+.status {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  color: #111827;
+  text-transform: capitalize;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.priority {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priority::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--priority-color, #fbbf24);
+}
+
+.actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .actions {
+  opacity: 1;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.iconButton:hover {
+  color: var(--accent-color);
+}
